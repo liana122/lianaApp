@@ -66,7 +66,9 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-       <h2><img src="" alt="" >{{session('name')}}</h2>
+       <h5><img src="{{asset('/photo-users/'.session('img'))}}" height="60px" alt="" 
+        style="border-radius:50%;"> <span> {{session('name')}}</span></h5>
+        
         <div class="collapse navbar-collapse justify-content-end text" id="navbarNav">
           <ul class="navbar-nav"  > 
            

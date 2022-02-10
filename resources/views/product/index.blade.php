@@ -9,7 +9,7 @@
                     <div class="card-header">
                         <h3 class="">list product bingkai</h3> 
 
-                        <a href="{{'/createproduct'}}" class="float-right btn btn-lg"><button id="btnadd">create product</button></a>
+                        <a href="{{'/product/create'}}" class="float-right btn btn-lg"><button id="btnadd">create product</button></a>
                                          
                     </div>
                 

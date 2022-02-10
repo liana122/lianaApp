@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\category;
+use App\Models\product;
 use Illuminate\Http\Request;
 
 class customerController extends Controller
@@ -13,7 +15,10 @@ class customerController extends Controller
      */
     public function index()
     {
-        return view('customers.index');
+        $data['product'] = product::all();
+        $data['category'] = category::all();
+
+        return view('customers.index', $data);
     }
 
     /**
